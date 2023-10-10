@@ -1,5 +1,10 @@
+$prymary-color: #ddd;
+$white-color: #fff;
+
+
+
 body{
-  background: #666666;
+  background: #666;
 }
 .dialog-container {
   position: fixed;
@@ -14,13 +19,13 @@ body{
 }
 
 .dialog {
-  background-color: #fff;
+  background-color: $white-color;
   max-height: 500px;
   max-width: 350px;
 
   &__header {
 
-      background-color: #ddd;
+      background-color: $prymary-color;
       display: grid;
       grid-template-columns: 2fr 1.1fr;
     }
@@ -33,9 +38,6 @@ body{
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis; 
-  }
-
-  &__header-button {
   }
 
   &__content {
@@ -56,7 +58,7 @@ body{
   }
 
   &__footer {
-      background-color: #ddd;
+      background-color: $prymary-color;
       word-wrap: break-word;
   }
 }
